@@ -64,6 +64,13 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    paragraph:'Portfolio page is here...',
+    pageTitle:"Project Page"
+  });
+});
+
 app.get('/bad',(req,res)=>{
   res.send({
     status:'001',
