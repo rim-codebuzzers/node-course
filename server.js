@@ -25,10 +25,11 @@ app.set('view engine','hbs');
 //Database connection
 app.use(function(req, res, next){
   global.connection = mysql.createConnection({
-    host     : 'localhost',
+    // host     : 'localhost',
+    host     : 'phpmyadmin.codebuzzers.com',
     user     : 'root',
-    // password : 'yZb0P4cG19bgBWmqUCvVvVS8rFehvnVQxOLlMKct0plBeUWI1e_zLXQ',
-    password : 'PassWord!@#123',
+    password : 'yZb0P4cG19bgBWmqUCvVvVS8rFehvnVQxOLlMKct0plBeUWI1e_zLXQ',
+    // password : 'PassWord!@#123',
     database : 'postapp'
   });
   connection.connect();
